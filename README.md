@@ -1,2 +1,2 @@
 # schleppy
-Utilities for accessing and transforming data structures
+Utilities for traversing and transforming data structures
