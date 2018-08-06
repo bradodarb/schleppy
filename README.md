@@ -39,7 +39,7 @@ reach(source_obj, pattern) # returns 6
 
 ### transform(source, transform, [options])
 
-[Insipred by Hoek.reach](https://github.com/hapijs/hoek/blob/master/API.md#transformobj-transform-options)
+[Insipred by Hoek.transform](https://github.com/hapijs/hoek/blob/master/API.md#transformobj-transform-options)
 
 Transforms an existing object into a new one based on the supplied `obj` and `transform` map. `options` are the same as the `reach` options. The first argument can also be an array of objects. In that case the method will return an array of transformed objects. Note that `options.separator` will be respected for the keys in the transform object as well as values.
 

@@ -12,3 +12,11 @@ test:
 
 .PHONY: check
 check: lint unit-test integration-test
+
+.PHONY: build
+build:
+	python setup.py sdist bdist_wheel
+
+.PHONY: push
+push:
+	twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
