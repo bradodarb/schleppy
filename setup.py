@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = convert(fh.read())
 
 setup(name='schleppy',
-      version='1.0.1',
+      version='1.0.2',
       description='Utilities for traversing and transforming data structures',
       long_description=long_description,
       description_content_type="text/markdown",
@@ -18,6 +18,6 @@ setup(name='schleppy',
       author='Brad Murry',
       author_email="bradodarb@hotmail.com",
       license='MIT',
-      packages=find_packages(),
+      packages=find_packages(exclude=['test*']),
       include_package_data=True,
       zip_safe=False)
