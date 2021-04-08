@@ -1,7 +1,7 @@
 # schleppy
 Utilities for traversing and transforming data structures
 
-Inspired by Hapi framework for .js (especially the Hoek plugin), I really missed some of these utilities in python so decided to port them over.
+
 
 ### reach(source, pattern, [options])
 
