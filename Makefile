@@ -1,9 +1,20 @@
 SHELL:=/bin/bash
 
+.PHONY: clean
+clean:
+	find . -name '*.pyc' -delete
+	find . -name '__pycache__' -delete
+	rm -rf .coverage
+	rm -rf htmlcov
+	rm -rf .pytest_cache
+	rm -rf .cache
+	rm -rvf ./*.egg-info
+	rm -rf build
+	rm -rf dist
 
 .PHONY: lint
 lint:
-	pylint ./src
+	pylint ./schleppy
 
 .PHONY: test
 test:
@@ -11,7 +22,7 @@ test:
 
 
 .PHONY: check
-check: lint unit-test integration-test
+check: lint test
 
 .PHONY: build
 build:
