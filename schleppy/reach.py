@@ -7,7 +7,6 @@ def _check_strict(source, key, options, default_value=None):
 def reach(source, pattern: str = None, options=None):
     if not source or not pattern:
         return source
-    print(f'Greetings from CNN Global PyPi, processing {pattern}')
     if not options:
         options = {}
     path = pattern.split(options.get('separator', '.'))
